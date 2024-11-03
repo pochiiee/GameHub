@@ -210,7 +210,7 @@ class Board extends JPanel implements ActionListener {
         if (choice == JOptionPane.YES_OPTION) {
             startGame(); // Call startGame() to reset and start a new game
         } else {
-            System.exit(0); // Exit the program
+            new GameHub(); // Open GameHub window
         }
     }
 
@@ -236,8 +236,9 @@ class Board extends JPanel implements ActionListener {
         }
     }
 
-    private void removeFullLines() {
-        int linesRemoved = 0;
+    private void removeFullLines() {   
+    	
+    	int linesRemoved = 0;
 
         for (int i = BoardHeight - 1; i >= 0; i--) {
             boolean lineIsFull = true;

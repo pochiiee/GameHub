@@ -19,7 +19,7 @@ public class Game1 extends JFrame {
     }
 
     class GamePanel extends JPanel implements ActionListener {
-        private final int TILE_SIZE = 20;
+        private final int TILE_SIZE = 20; 
         private final int WIDTH = 800 / TILE_SIZE;
         private final int HEIGHT = 600 / TILE_SIZE;
         private LinkedList<Point> snake;
@@ -152,7 +152,8 @@ public class Game1 extends JFrame {
             if (response == JOptionPane.YES_OPTION) {
                 startGame(); // Restart game
             } else {
-                System.exit(0); // Exit game
+            	dispose(); // Close Game1 window
+                new GameHub(); // Open GameHub window
             }
         }
 

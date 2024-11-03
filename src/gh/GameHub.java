@@ -10,7 +10,7 @@ class GameHub extends JFrame {
         setTitle("GameHub");
         setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        
         // Main container panel with BorderLayout to add title on top
         JPanel mainPanel = new JPanel(new BorderLayout());
         
